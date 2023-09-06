@@ -37,6 +37,62 @@ void method_01 ( void )
  Funcao principal.
  @return codigo de encerramento
 */
+/** 
+   Method_02 - Repeticao com teste no inicio. 
+ */ 
+void method_02 ( void ) 
+{ 
+ // definir dado 
+    int x = 0; 
+    int y = 0; 
+ 
+ // identificar 
+    IO_id ( "Method_02 - v0.0" ); 
+ 
+ // ler do teclado 
+    x = IO_readint ( "Entrar com uma quantidade: " ); 
+ 
+ // repetir (x) vezes 
+    y = x;  // copiar o valor lido (e' melhor) 
+    while ( y > 0 ) 
+    { 
+     // mostrar valor atual 
+        IO_println ( IO_toString_d ( x ) ); 
+     // passar ao proximo valor 
+        y = y - 1; 
+    } // end while 
+ 
+ // encerrar 
+    IO_pause ( "Apertar ENTER para continuar" ); 
+} // end method_02 ( )
+/** 
+   Method_03 - Repeticao com teste no inicio. 
+ */ 
+void method_03 ( void ) 
+{ 
+ // definir dado 
+    int x = 0; 
+    int y = 0; 
+ 
+ // identificar 
+    IO_id ( "Method_03 - v0.0" ); 
+ 
+ // ler do teclado 
+    x = IO_readint ( "Entrar com uma quantidade: " ); 
+ 
+ // repetir (x) vezes 
+    y = 1;  // o valor lido devera' ser preservado 
+    while ( y <= x ) 
+    { 
+     // mostrar valor atual 
+        IO_printf ( "%d\n", y ); 
+     // passar ao proximo valor 
+        y = y + 1; 
+    } // end while 
+ 
+ // encerrar 
+    IO_pause ( "Apertar ENTER para continuar" ); 
+} // end method_03 ( )
 int main ( )
 {
 // definir dado
