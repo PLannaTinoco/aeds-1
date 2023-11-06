@@ -1,3 +1,4 @@
+#include "io.h"
 void contarEExibirAlfanumericos(char *palavra, int *totalAlfanumericos) {
     int contador = 0;
     int i = 0;

@@ -4,7 +4,7 @@ void multiplode7_F2(int x, int y){
     {
         return;
     }
-       printf("%i\n",y);
+       printf("1/%i\n",y);
         multiplode7_F2(x-1, y-7);
     
 }
